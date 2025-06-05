@@ -32,7 +32,7 @@ export default function Home() {
       >
         <div className="max-w-4xl mx-auto px-4">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 inline-block text-transparent bg-clip-text">
-            Hi, I'm Parth Thakor
+            Hi, I&apos;m Parth Thakor
           </h1>
           <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-8">
             A passionate Web Developer specializing in MERN stack
@@ -75,7 +75,7 @@ export default function Home() {
             </p>
             <p className="text-lg text-gray-700 dark:text-gray-300">
               My goal is to create efficient, scalable, and user-friendly applications that solve real-world problems.
-              I'm constantly exploring new technologies and frameworks to stay at the forefront of web development.
+              I&apos;m constantly exploring new technologies and frameworks to stay at the forefront of web development.
             </p>
           </div>
         </div>
@@ -388,7 +388,7 @@ export default function Home() {
           <div className="max-w-xl mx-auto bg-white dark:bg-gray-800 p-8 rounded-xl shadow-md">
             <div className="mb-6 text-center">
               <p className="text-gray-700 dark:text-gray-300">
-                Feel free to get in touch with me. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+                Feel free to get in touch with me. I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
               </p>
             </div>
             
