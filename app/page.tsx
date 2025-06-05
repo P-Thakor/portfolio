@@ -1,7 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState({
@@ -338,6 +337,39 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
+            {/* Project 6 */}
+             <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2">
+              <div className="p-1 bg-gradient-to-r from-blue-600 to-purple-600">
+                <div className="bg-white dark:bg-gray-800 p-5">
+                  <h3 className="text-xl font-bold mb-2">AI Gmail Replier</h3>
+                  <p className="text-gray-700 dark:text-gray-300 mb-4">
+                    An AI-powered email replier that helps users manage their inbox more efficiently.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="px-3 py-1 bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 rounded-full text-sm">TypeScript</span>
+                    <span className="px-3 py-1 bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 rounded-full text-sm">OAuth</span>
+                    <span className="px-3 py-1 bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 rounded-full text-sm">PostgreSQL</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <a 
+                      href="https://github.com/P-Thakor/gmail-ai-assistant" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
+                    >
+                      View Code
+                    </a>
+                    <a 
+                      href="#" 
+                      className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
+                    >
+                      Live Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -367,7 +399,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="font-medium">Email</h3>
-                  <p className="text-gray-700 dark:text-gray-300">hello@parththakor.com</p>
+                  <p className="text-gray-700 dark:text-gray-300">pthakor.work@gmail.com</p>
                 </div>
               </div>
               
