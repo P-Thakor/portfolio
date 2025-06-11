@@ -4,7 +4,7 @@
 import Image from "next/image";
 import { useState } from "react";
 
-const page = () => {
+const CPage = () => {
 
     
     const images = [
@@ -55,4 +55,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default CPage;
