@@ -2,15 +2,37 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 
 const page = () => {
 
+    
+    const images = [
+        "https://res.cloudinary.com/dxhgmcprv/image/upload/v1749664177/IMG_20231210_113412_gd6ufh.jpg",
+        "https://res.cloudinary.com/dxhgmcprv/image/upload/v1749666684/IMG_20240104_112553_1_ywsy8q.jpg",
+        "https://res.cloudinary.com/dxhgmcprv/image/upload/v1749666517/IMG_20231014_130928_kfh8wn.jpg",
+        "https://res.cloudinary.com/dxhgmcprv/image/upload/v1749666777/IMG_20240427_183416_fvuvuc.jpg"
+    ];
+    const [currentImage, setCurrentImage] = useState(images[0]);
+    
+    // Function to get a random image from the array
+    const getRandomImage = () => {
+        return images[Math.floor(Math.random() * images.length)];
+    };
+
+    (() => {
+        const interval = setInterval(() => {
+            setCurrentImage(getRandomImage());
+        }, 3000); // Change image every 5 seconds
+
+        return () => clearInterval(interval); // Cleanup on unmount
+    })();
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-50 to-red-100 dark:from-pink-900 dark:via-purple-900 dark:to-red-900 overflow-hidden relative">
       
       <Image
-        src="https://res.cloudinary.com/dxhgmcprv/image/upload/v1749664177/IMG_20231210_113412_gd6ufh.jpg"
+        src={currentImage}
         alt="Love Background"
         layout="fill"
         objectFit="cover"
